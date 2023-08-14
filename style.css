@@ -1,0 +1,23 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+
+main{
+  overflow-x: hidden;
+}
+
+.hero_gallery{}
+.hero_gallery_wrapper{
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  width: max-content;
+  /* 내 자식 너비 다 가져 */
+}
+main>section:nth-child(2n){
+  position: relative;
+  left: -100vw;
+} /*2n 짝수 */
+main>section:nth-child(2n+1){
+  position: relative;
+  left: -10vw;
+} /* 2n+1 홀수 */
